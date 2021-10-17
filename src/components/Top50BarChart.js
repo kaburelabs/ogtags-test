@@ -10,7 +10,7 @@ import data from './Data'
 var keys = Object.keys(data);
 
 const LastDateData = data[keys[keys.length - 1]]
-const projectNames = Object.keys(LastDateData);
+// const projectNames = Object.keys(LastDateData);
 
 function sortAndListData(topN) {
     var sortable = []
@@ -50,7 +50,7 @@ export default function BarChart() {
 
     const [topN, setTopN] = useState(20);
     const [seTopN, setSeTopN] = useState(topN);
-    const [nClicks, setNClicks] = useState(0);
+    // const [nClicks, setNClicks] = useState(0);
 
     const handleChange = (e, data) => { 
       setTopN(data.value)
@@ -65,7 +65,11 @@ export default function BarChart() {
       console.log("some thing changed , need to figure out")
     }, [topN]);
 
-    const {listX, listY, listFollowing} = sortAndListData(seTopN)
+    const {
+      listX,
+      listY,
+      // listFollowing
+    } = sortAndListData(seTopN)
 
     return (
         <div>

@@ -15,8 +15,6 @@ const About = ( ) => {
         {'title': "WALLET ADDRESS", 'content': `Please, consider sending some ADAs to support and motivate us to provide more work force on this cool and promising project. Send the ADAs to: `, "last":true}
     ]
 
-    let count = 0
-
     const ListValues = AboutText.map(function(row) {
 
         if (row.last) {

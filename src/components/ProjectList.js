@@ -199,7 +199,7 @@ const ProjectListing = () => {
 
     const [cardOrder, setCardOrder] = useState('desc');
     const [projects, setProjects] = useState('all');
-    const listRef = React.createRef();
+
 
     const handleChange = (e, data) => {
       setCardOrder(data.value)}

@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import Button from '@material-ui/core/Button';
 import { Modal } from 'react-bootstrap'
-import { FaWallet } from "react-icons/fa";
 
 export default function Footer() {
 
