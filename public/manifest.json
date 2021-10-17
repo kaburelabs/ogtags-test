@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "CNFT Monitor",
+  "name": "Twitter monitor of Cardano projects",
   "icons": [
     {
       "src": "favicon.ico",

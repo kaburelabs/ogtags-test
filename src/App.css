@@ -1,38 +1,319 @@
-.App {
+#container {
+  background: #000F08;
+  padding: 16px;    
+  color: white;
+  min-height: 85vh;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+body {
+  background: #000F08 !important;
+}
+
+.navbarParent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  background: rgb(137 185 18);
+}
+
+.navbarItems {
+    display: flex;
+    min-width: 400px;
+    justify-content: space-evenly;
+}
+
+.linkStyle {
+  color:black;
+}
+
+.linkStyle:hover {
+  color:#504242;
+}
+
+.btnBaseStyle {
+  background: #d3cece !important;
+  color: #000000 !important;
+}
+
+.textCenter {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.width-100 {
+  width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.bottom4 {
+  margin-bottom: 4px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.bottom8 {
+  margin-bottom: 8px;
+}
+
+.bottom16 {
+  margin-bottom: 16px;
+}
+
+.bottom32 {
+  margin-bottom: 32px;
+}
+
+.bottom64 {
+  margin-bottom: 64px;
+}
+
+.top8 {
+  margin-top: 8px;
+}
+
+.top16 {
+  margin-top: 16px;
+}
+
+.top32 {
+  margin-top: 32px;
+}
+
+.top64 {
+  margin-top: 64px;
+}
+
+.left8 {
+  margin-left: 8px;
+}
+
+.left16 {
+  margin-left: 16px;
+}
+
+.left32 {
+  margin-left: 32px;
+}
+
+
+.right4 {
+  margin-right: 4px;
+}
+
+.right8 {
+  margin-right: 8px;
+}
+
+.right16 {
+  margin-right: 16px;
+}
+
+.right32 {
+  margin-right: 32px;
+}
+
+.ui.selection.dropdown {
+  min-width: 100px !important;
+}
+
+.marginSpace {
+  margin-bottom: 16px;
+  margin-top: 32px;
+}
+
+.btnSubmitMargins {
+  margin: 16px 0px 32px 120px;
+}
+
+
+.font-xs {
+  font-size: min(12px, 3vw);
+  line-height: min(12px, 3vw);
+}
+
+.font-sm {
+  font-size: min(14px, 3.5vw);
+}
+
+.font-md {
+  font-size: min(16px, 4vw);
+}
+
+.font-lg {
+  font-size: min(20px, 5.5vw);
+}
+
+.font-xl {
+  font-size: min(25px, 8vw);
+}
+
+.font-xxl {
+  font-size: min(32px, 9vw);
+}
+
+
+#footer {
+  background-color: #141414;
+  padding: 32px 64px;
   color: white;
+  margin-bottom: 32px;
 }
 
-.App-link {
-  color: #61dafb;
+
+.white {
+  color: white !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.dispFlex {
+  display: flex;
+  justify-content: space-between;
 }
+/* 
+.modalStyle {
+  background:#0a0a0a4a;
+  color:blanchedalmond;
+} */
+
+
+.modal-content {
+  color: #fbf9f7 !important;
+  background: #000f08 !important;
+}
+
+.bordRadius24 {
+  border-radius: 24px;
+}
+
+
+.cardStyleSponsor {
+  background: #150808;
+  margin: 0 auto;
+  width: 100%;
+  display: grid;
+  min-height: 128px;
+  padding:13px;
+  border-radius: 8px;
+  border: 3px dashed gold;
+}
+
+.cardStyle {
+  background: #141414;
+  margin: 0 auto;
+  width: 100%;
+  display: grid;
+  min-height: 128px;
+  padding: 16px;
+  border-radius: 8px;
+  border: 1px dashed #292626;
+}
+
+.projectCards .btnModalHist {
+  width: 100%;
+  padding: 0px 4px;
+  background: transparent;
+  color: red;
+  border: none;
+}
+
+.projectCards .btn-primary:hover {
+  color: #f00;
+  background-color: #4a46469e;
+  border-color: #172d4c;
+}
+
+.projectCards .btn-check:active+.btn-primary, .btn-check:checked+.btn-primary, .btn-primary.active, .btn-primary:active, .show>.btn-primary.dropdown-toggle {
+  color: #f00 !important;
+  background-color: #5c5c5c99 !important;
+  border-color: #ff0000 !important;
+}
+
+.projectCards .btn-check:focus+.btn-primary, .btn-primary:focus {
+  color: #f00 !important;
+  background-color: #5c5c5c99 !important;
+  border-color: #ff0000 !important;
+  box-shadow: none !important;
+}
+
+
+
+.flexStart {
+  display: flex;
+  justify-content: start;
+}
+
+.badgeSoon {
+  background: green;
+  height: 18px;
+  margin-left: 8px;
+}
+
+.p {
+  margin: 3px;
+}
+
+.margin0 {
+  margin-bottom: 0;
+}
+
+.inputsMonitor {
+  display: flex;
+}
+
+.inputsMonitor .SelectElement {
+  min-width: 240px !important;
+}
+
+.textTitleCenter {
+  text-align: center;
+  margin-top: 64px;
+  margin-bottom: 32px;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 16px;
+}
+
+.cardsTitle {
+  font-weight: bold;
+  justify-content: center;
+  font-size: 16px;
+  min-height: 46px;
+  max-height: 46px;
+  align-items: center;
+  text-align: center;
+  display: flex;
+}
+
+.aboutWrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap:80px;
+  max-width: 70%;
+  margin: 64px auto 0;
+}
+
+.addrSpanStyle {
+    font-weight: bold;
+    word-break: break-all;
+    display: block;
+}
+
+
+
+/* 
+.h1, .h2, .h3, .h4, .h5 {
+  margin: 0;
+} */
+
+/* DROP = 9229, 6451, 8108, 4020, 7518 */
+
+/* 7518 - +750*/
+/* 5636 - +7200 */
+/* 3605 - -3875 */
+/* 0716 - -3700 */
+
+/* 9229, 6451, 8108, 3605, 716 */
+

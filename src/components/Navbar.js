@@ -1,5 +1,6 @@
 import React from "react"
 import { NavLink } from "react-router-dom"
+import LogoImage from './fundo_transp.png';
 
 function NavbarComponent() {
 
@@ -11,8 +12,8 @@ function NavbarComponent() {
   return (
     <div>
         <div className="navbarParent">
-            <div>
-                CNFT Twitter Monitor
+            <div style={{maxWidth: "85px"}}>
+                <img className='width-100' src={LogoImage} alt="logo of app"/>
             </div>
             <div className="navbarItems">
                 <NavLink exact to="/" className="linkStyle" 
