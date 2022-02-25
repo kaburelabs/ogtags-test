@@ -6,14 +6,16 @@ const Home = ({handleClick, totalClicks,
                slider, onChangeSlider, sliderTitle}) => {
     
     const htmlDiv = sponsorList.map(sponsor => <Col lg={4} key={sponsor.name}>
-        <div key={sponsor.name}>
-            <h3 className="bottom8">{sponsor.name}</h3>
-            <div className='flexStart bottom4'>
-                <p className='p'>Pre Sales start</p>
-                <Badge className='badgeSoon'>SOON</Badge>
+        <a href='https://google.com' target='blank'>
+            <div key={sponsor.name}>
+                <h3 className="bottom8">{sponsor.name}</h3>
+                <div className='flexStart bottom4'>
+                    <p className='p'>Pre Sales start</p>
+                    <Badge className='badgeSoon'>SOON</Badge>
+                </div>
+                <img alt='sponsor' src={sponsor.images} key={sponsor.images}></img>
             </div>
-            <img alt='sponsor' src={sponsor.images} key={sponsor.images}></img>
-        </div>
+        </a>
     </Col>
     )
 

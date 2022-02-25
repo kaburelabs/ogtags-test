@@ -113,7 +113,7 @@ body {
 }
 
 .ui.selection.dropdown {
-  min-width: 100px !important;
+  min-width: 240px !important;
 }
 
 .marginSpace {
@@ -124,6 +124,7 @@ body {
 .btnSubmitMargins {
   margin: 16px 0px 32px 120px;
 }
+
 
 
 .font-xs {
@@ -301,7 +302,19 @@ body {
     display: block;
 }
 
+@media (min-width: 576px){
+  .modalStyle .modal-dialog {
+      max-width: 780px;
+  }
+}
 
+@media (max-width: 576px){
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 16px;
+  }
+}
 
 /* 
 .h1, .h2, .h3, .h4, .h5 {
