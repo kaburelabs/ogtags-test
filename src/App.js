@@ -23,7 +23,7 @@ function App() {
   useEffect(() => {
     const fetchData = async () => {
       const cards = await fetch(
-        'http://fastapi-hrk.herokuapp.com/projects/cards',
+        'https://fastapi-hrk.herokuapp.com/projects/cards',
       );
       const projs = await fetch(
         'https://fastapi-hrk.herokuapp.com/projects/list',
